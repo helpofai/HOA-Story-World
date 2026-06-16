@@ -125,5 +125,11 @@ Ensure the following folders are writable by the server (usually permission `775
 - [ ] Real-time Collaborative Editing
 - [ ] Native Mobile App (PWA Optimized)
 
+## 📄 License & Copyright
+
+**Copyright © 2026 Rajib. All Rights Reserved.**
+
+This project is **Proprietary**. No part of this software may be used, copied, modified, or distributed without the explicit written permission of the copyright holder.
+
 ---
-Developed with ❤️ for the next generation of storytellers.
+Developed with ❤️ by Rajib for the next generation of storytellers.
