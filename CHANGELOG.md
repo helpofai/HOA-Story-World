@@ -33,4 +33,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Resolved Tailwind v4 scanning issues for modular Blade files.
 
 ---
-*Initial Release - The birth of LoreVerse.*
+*Initial Release - The birth of HOA-Story-World.*

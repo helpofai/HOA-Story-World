@@ -1,6 +1,6 @@
-# LoreVerse - Comprehensive Project Progress
+# HOA-Story-World - Comprehensive Project Progress
 
-This document tracks the full implementation of the LoreVerse ecosystem as defined in the `GEMINI.md` master plan. It serves as the authoritative source for project status, setup details, and architectural logic.
+This document tracks the full implementation of the HOA-Story-World ecosystem as defined in the `GEMINI.md` master plan. It serves as the authoritative source for project status, setup details, and architectural logic.
 
 ---
 

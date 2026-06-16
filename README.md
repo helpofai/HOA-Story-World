@@ -1,10 +1,10 @@
-# LoreVerse - Next-Generation Story Reading & Authoring Platform
+# HOA-Story-World - Next-Generation Story Reading & Authoring Platform
 
 [![Laravel 13](https://img.shields.io/badge/Laravel-13.x-FF2D20?style=for-the-badge&logo=laravel)](https://laravel.com)
 [![Tailwind CSS v4](https://img.shields.io/badge/Tailwind_CSS-v4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com)
 [![Architecture](https://img.shields.io/badge/Architecture-Modular_DDD-blue?style=for-the-badge)](https://en.wikipedia.org/wiki/Domain-driven_design)
 
-LoreVerse is a premium, industry-grade story ecosystem built with Laravel 13 and Tailwind CSS v4. It transcends traditional story websites by combining the community power of Wattpad, the depth of Royal Road, and the world-building tools of a game engine.
+HOA-Story-World is a premium, industry-grade story ecosystem built with Laravel 13 and Tailwind CSS v4. It transcends traditional story websites by combining the community power of Wattpad, the depth of Royal Road, and the world-building tools of a game engine.
 
 ## 🚀 Key Features
 
@@ -33,7 +33,7 @@ LoreVerse is a premium, industry-grade story ecosystem built with Laravel 13 and
 
 ## 🏗️ Architecture
 
-LoreVerse follows a strict **Modular Domain-Driven Architecture**. Unlike standard Laravel apps, features are organized into self-contained domains:
+HOA-Story-World follows a strict **Modular Domain-Driven Architecture**. Unlike standard Laravel apps, features are organized into self-contained domains:
 
 ```text
 app/Modules/

@@ -89,7 +89,7 @@
                     <span class="flex items-center gap-1"><kbd class="font-sans font-semibold text-gray-900 border border-gray-300 px-1 rounded bg-white">esc</kbd> to close</span>
                     <span class="flex items-center gap-1"><kbd class="font-sans font-semibold text-gray-900 border border-gray-300 px-1 rounded bg-white">↵</kbd> to select</span>
                 </div>
-                <div class="font-bold text-[10px] uppercase tracking-widest text-blue-600">Powered by LoreVerse</div>
+                <div class="font-bold text-[10px] uppercase tracking-widest text-blue-600">Powered by HOA-Story-World</div>
             </div>
         </div>
     </div>
