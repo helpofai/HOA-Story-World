@@ -1,0 +1,32 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-DwVsBt0W.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/auth-animation.css": {
+    "file": "assets/auth-animation-Dqat22-A.css",
+    "name": "auth-animation",
+    "names": [
+      "auth-animation.css"
+    ],
+    "src": "resources/css/auth-animation.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BRO1R7DU.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/auth-animation.js": {
+    "file": "assets/auth-animation-CVHcAcyl.js",
+    "name": "auth-animation",
+    "src": "resources/js/auth-animation.js",
+    "isEntry": true
+  }
+}
