@@ -55,7 +55,7 @@ app/Modules/
 - **Editor:** Tiptap (ProseMirror Wrapper)
 - **Database:** MySQL 8.0+
 
-## ⚙️ Installation
+## ⚙️ Installation (Development)
 
 1. **Clone the repository:**
    ```bash
@@ -85,6 +85,39 @@ app/Modules/
    ```bash
    npm run dev
    ```
+
+## 🌐 Production & Shared Hosting Guide (Zero-Command Deployment)
+
+This repository is optimized for **Shared Hosting**. Because the `vendor/` and `public/build/` folders are included in the repository, you can deploy the site without running any terminal commands on your server.
+
+### 1. Uploading Files
+Upload all files to your server (e.g., via FTP or File Manager). Your structure should look like this:
+- `/app`
+- `/bootstrap`
+- `/config`
+- `/public` (The domain must point to this folder)
+- `/vendor`
+- `.env`
+
+### 2. Environment Configuration
+Edit the `.env` file on your server:
+- `APP_ENV=production`
+- `APP_DEBUG=false`
+- `APP_URL=https://your-domain.com`
+- **Database:** Update `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` with your production credentials.
+
+### 3. Database Migration
+If you cannot run `php artisan migrate` on your server:
+1. Export the database from your local machine as an `.sql` file.
+2. Import that `.sql` file into your server's database using phpMyAdmin.
+
+### 4. Folder Permissions
+Ensure the following folders are writable by the server (usually permission `775` or `755`):
+- `storage/`
+- `bootstrap/cache/`
+
+### 5. Web Server Setup
+**CRITICAL:** Your domain or subdomain MUST point to the `/public` directory of the project, not the root directory. If you are on shared hosting without control over the document root, you may need to move the contents of `public/` to `public_html/` and update `index.php`.
 
 ## 📅 Roadmap
 - [ ] AI Content Generation (Complete Chapter generation)
