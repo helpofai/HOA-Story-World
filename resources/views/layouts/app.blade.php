@@ -16,6 +16,31 @@
 </head>
 <body class="font-sans antialiased text-gray-900 select-none bg-gray-50" x-data>
     <x-search-modal />
+
+    @if(session('success'))
+    <div x-data="{ show: true }" 
+         x-show="show" 
+         x-init="setTimeout(() => show = false, 5000)"
+         x-transition:enter="transition ease-out duration-300"
+         x-transition:enter-start="opacity-0 translate-y-4"
+         x-transition:enter-end="opacity-100 translate-y-0"
+         x-transition:leave="transition ease-in duration-300"
+         x-transition:leave-start="opacity-100 translate-y-0"
+         x-transition:leave-end="opacity-0 translate-y-4"
+         class="fixed bottom-20 md:bottom-8 right-8 z-[150] bg-gray-900 text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-4 border border-white/10 backdrop-blur-xl">
+        <div class="w-8 h-8 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div>
+            <p class="text-xs font-black uppercase tracking-widest opacity-50">Success</p>
+            <p class="text-sm font-bold">{{ session('success') }}</p>
+        </div>
+        <button @click="show = false" class="ml-4 text-white/40 hover:text-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+    </div>
+    @endif
+
     <!-- Sticky Top Header -->
     <header class="fixed top-0 left-0 right-0 z-[100] w-full bg-white/80 backdrop-blur-md border-b border-gray-100 shadow-sm transition-all duration-300">
             <div class="flex items-center justify-between h-14 px-4 max-w-7xl mx-auto">

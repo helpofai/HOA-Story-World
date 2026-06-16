@@ -10,6 +10,20 @@
             <p class="text-gray-500 font-medium">Define your story universe and start your writing journey.</p>
         </div>
 
+        @if($errors->any())
+        <div class="mb-8 p-6 bg-red-50 border-2 border-red-100 rounded-[2rem] animate-shake">
+            <h3 class="text-red-800 font-black text-xs uppercase tracking-widest mb-3 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                Please fix the following:
+            </h3>
+            <ul class="space-y-1">
+                @foreach ($errors->all() as $error)
+                    <li class="text-red-600 text-sm font-bold tracking-tight">{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+
         <form action="{{ route('author.story.store') }}" method="POST" enctype="multipart/form-data" class="space-y-8">
             @csrf
             
