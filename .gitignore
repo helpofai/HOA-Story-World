@@ -1,8 +1,9 @@
-
-
+/node_modules
 /public/hot
-
 /storage/*.key
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
 
 
 .env
